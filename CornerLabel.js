@@ -6,7 +6,6 @@
  */
 
 import React, {
-    PropTypes,
     Component,
 } from 'react'
 import {
@@ -33,22 +32,6 @@ const styles = StyleSheet.create({
 })
 
 export default class CornerLabel extends Component {
-
-    static defaultProps = {
-        alignment: 'left',
-    }
-
-    static propTypes = {
-        style: View.propTypes.style,
-        textStyle: Text.propTypes.style,
-        cornerRadius: PropTypes.number.isRequired,
-        alignment: PropTypes.oneOf([
-            'left',
-            'right',
-        ])
-    }
-
-    // 构造
     constructor (props) {
         super(props)
         // 初始状态
